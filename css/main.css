@@ -459,7 +459,6 @@ div.invitado:hover p {
 }
 /**contador**/
 .parallax::before {
-    content: 'jujuju';
     width: 100%;
     height: 100%;
     position: absolute;
@@ -478,9 +477,9 @@ div.contador {
     height: auto;
 }
 
-div.contador {
+div.contador::before {
     background-image: url(../img/bg-resumen.jpg);
-    
+    content: '';
 }
 ul.resumen-evento {
     position: relative;
