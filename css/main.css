@@ -180,6 +180,13 @@ ul {
     background-color: #ffffff;
     color: #fe4918;
 } 
+.button.transparente {
+    background-color: transparent;
+    border:2px solid #fff;
+}
+.button.transparente:hover {
+    border:2px solid #fe4918;
+}
 .button:hover {
     background-color: #e33000;
 }
@@ -633,6 +640,31 @@ blockquote p::before {
     padding: 0;
     line-height: 1;
     color: #fe4918;
+}
+/**Newsletter**/
+div.newsletter {
+    position: relative;
+    height: auto;
+}
+div.newsletter::before {
+    background-image: url(../img/bg-newsletter.jpg);
+    content: '';
+}
+div.newsletter .contenido {
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+div.newsletter .contenido p {
+    font-size: 2em;
+    text-transform: lowercase;
+}
+div.newsletter .contenido h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* ==========================================================================
