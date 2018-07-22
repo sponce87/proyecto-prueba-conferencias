@@ -199,7 +199,43 @@
                       </div>
                   </div> <!--#domingo-->
               </div><!--.caja-->
-</div> <!--#eventos-->
+            </div> <!--#eventos-->
+            <div id="resumen" class="resumen">
+               <h3>Pagos y Extras</h3>
+               <div class="caja clearfix">
+                 <div class="extras">
+                   <div class="orden">
+                     <label for="camisa_evento">Camisa del evento $10 <small>(promocion 7% dscto)</small></label>
+                     <input type="number" min="0" id="camisa_evento" size="3" placeholder="0">
+                  </div>
+                  <div class="orden">
+                    <label for="etiquetas">Paquete de etiquetas $2 <small>(HTML5, CSS3, JavaScript, Chrome)</small></label>
+                    <input type="number" min="0" id="etiquetas" size="3" placeholder="0">
+                 </div>
+                 <div class="orden">
+                   <label for="regalo">Seleccione regalo</label>
+                   <select id="regalo" required>
+                     <option value="">- Selecciones un regalo -</option>
+                     <option value="ETI">Etiquetas</option>
+                     <option value="PUL">Pulsera</option>
+                     <option value="PLU">Plumas</option>
+                   </select>
+                 </div>
+                 <input type="button" id="calcular" class="button" value="calcular">
+                </div><!--extras-->
+                <div class="total">
+                  <p>Resumen:</p>
+                  <div id="lista-productos">
+
+                  </div>
+                  <p>Total:</p>
+                  <div id="suma-total">
+
+                  </div>
+                  <input id="BtnRegistro" type="submit" class="button" value="pagar">
+                </div>
+               </div>  
+            </div><!--resumen-->
 
           <div id="error"></div>
         </div>
