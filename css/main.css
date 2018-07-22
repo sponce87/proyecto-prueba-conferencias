@@ -785,6 +785,32 @@ div.paquetes .tabla-precio input {
 .contenido-dia > div label time {
     color: #fe4918;
 }
+/**Resumen registro**/
+.resumen p {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.resumen .extras {
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+.extras .orden {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.extras .orden input {
+    margin: 10px 0 0 0;
+}
+.resumen .total {
+    float: right;
+    width: 50%;
+    padding: 30px;
+}
+.resumen input {
+    display: block;
+    margin: 10px auto;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
