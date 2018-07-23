@@ -2,6 +2,8 @@
     "use strict";
     document.addEventListener('DOMContentLoaded',function(){
 
+        
+
         var regalo=document.getElementById('regalo');
         //campos datos de usuario
         var nombre=document.getElementById('nombre');
@@ -24,6 +26,16 @@
         var camisas=document.getElementById('camisa_evento');
         var etiquetas=document.getElementById('etiquetas');
 
+        var map = L.map('mapa').setView([-12.068542, -77.085636], 20);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([-12.068542, -77.085636]).addTo(map)
+            .bindPopup('Aca es la conferencia!!!<br> Nos vemos pronto.')
+            .openPopup();
+        
         calcular.addEventListener('click', calcularMontos);
 
         nombre.addEventListener('blur',validarCampos);
@@ -35,7 +47,7 @@
         pase_dosdias.addEventListener('blur', mostrarDias);
         pase_completo.addEventListener('blur', mostrarDias);
 
-        function validarEmail {
+        function validarEmail() {
             if (this.value.indexOf('@')>-1) {
                 errorDiv.style.display='none';
                 this.style.display='1px solid #cccccc';
