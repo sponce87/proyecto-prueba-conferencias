@@ -1,9 +1,6 @@
 (function() {
     "use strict";
     document.addEventListener('DOMContentLoaded',function(){
-
-        
-
         var regalo=document.getElementById('regalo');
         //campos datos de usuario
         var nombre=document.getElementById('nombre');
@@ -26,7 +23,7 @@
         var camisas=document.getElementById('camisa_evento');
         var etiquetas=document.getElementById('etiquetas');
 
-        var map = L.map('mapa').setView([-12.068542, -77.085636], 20);
+/*       var map = L.map('mapa').setView([-12.068542, -77.085636], 20);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -34,7 +31,7 @@
 
         L.marker([-12.068542, -77.085636]).addTo(map)
             .bindPopup('Aca es la conferencia!!!<br> Nos vemos pronto.')
-            .openPopup();
+            .openPopup();*/
         
         calcular.addEventListener('click', calcularMontos);
 
@@ -50,7 +47,7 @@
         function validarEmail() {
             if (this.value.indexOf('@')>-1) {
                 errorDiv.style.display='none';
-                this.style.display='1px solid #cccccc';
+                this.style.border='1px solid #cccccc';
             } else {
                 errorDiv.style.display='block';
                 errorDiv.innerHTML='debe tener al menos un @';
@@ -67,7 +64,7 @@
                 errorDiv.style.border='1px solid red';
             } else {
                 errorDiv.style.display='none';
-                this.style.display='1px solid #cccccc';
+                this.style.border='1px solid #cccccc';
             }
         }
 
