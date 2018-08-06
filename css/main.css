@@ -179,7 +179,7 @@ ul {
 .button.hollow:hover {
     background-color: #ffffff;
     color: #fe4918;
-} 
+}
 .button.transparente {
     background-color: transparent;
     border:2px solid #fff;
@@ -337,7 +337,7 @@ div.logo img {
     div.logo {
         width: 33%;
     }
-    
+
 }
 /**Nav principal**/
 nav.navegacion-principal {
@@ -476,7 +476,7 @@ nav.menu-programa a.activo::after {
 @media only screen and (min-width: 768px) {
     nav.menu-programa a {
         display: table-cell;
-    }    
+    }
 }
 nav.menu-programa a i {
     color: #fe4918;
@@ -541,7 +541,7 @@ div.invitado p {
     font-family: 'Oswald', sans-serif;
     color:#fe4918;
     text-transform: uppercase;
-    transition: all .5s ease-in-out; 
+    transition: all .5s ease-in-out;
 }
 div.invitado:hover p {
     bottom: -80px;
@@ -606,7 +606,7 @@ ul.lista-precios > li {
     ul.lista-precios > li {
         float: left;
         width: 33.3%;
-    }   
+    }
 }
 div.tabla-precio {
     border: 1px solid #e1e1e1;
@@ -800,7 +800,7 @@ p.copyright {
 /**Galeria**/
 body.conferencia .navegacion-principal .activo {
     border-bottom: 2px solid #fe4918;
-} 
+}
 .galeria a {
     display: inline-block;
     margin-bottom: 5px;
@@ -911,13 +911,57 @@ div.paquetes .tabla-precio input {
 }
 input[disabled].button {
     opacity: .5;
-} 
+}
 #error {
     clear: both;
     padding: 20px;
     text-align: center;
     display: none;
 }
+/**CALENDARIO**/
+.calendario h3 {
+    background-color: #fe4918;
+    clear: both;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+div.calendario::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+div.dia {
+    width: 50%;
+    float: left;
+    border: 2px solid #e1e1e1;
+    transition: all .3s ease;
+}
+@media only screen and (min-width: 768px) {
+    div.dia {
+        width: 33.3%;
+        min-height: 240px;
+        padding-top: 20px;
+    }
+}
+div.dia:hover {
+    background-color: #e1e1e1;
+    -webkit-transform: scale(1.1);
+}
+.dia p.titulo {
+    color: #fe4918;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dia p{
+    font-size: 1em;
+}
+.dia i {
+    color: #fe4918;
+    font-size: 1.6em;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

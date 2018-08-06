@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Sergio Ponce
- * Date: 05-Aug-18
- * Time: 12:38 PM
- */
+
+$conn= new mysqli('localhost','root','root','gdlwebcamp');
+
+if ($conn->connect_error) {
+	echo $error->$conn->connect_error;
+}
