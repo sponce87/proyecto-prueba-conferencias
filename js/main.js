@@ -148,6 +148,11 @@ $(function() {
     //Animacion letras 
     $('.nombre-sitio').lettering();
 
+    //Agregar clase a menu
+    $('body.conferencia .navegacion-principal a:contains("Conferencia")').addClass('activo');
+    $('body.calendario .navegacion-principal a:contains("Calendario")').addClass('activo');
+    $('body.invitados .navegacion-principal a:contains("Invitados")').addClass('activo');
+
     //Menu fijo
     var windowHeight =$(window).height();
     console.log(windowHeight);
@@ -201,10 +206,14 @@ $(function() {
 
     //Cuenta regresiva
 
-    $('.cuenta-regresiva').countdown('2018/09/30 07:35:00', function(event){
+    $('.cuenta-regresiva').countdown('2018/12/24 23:59:59', function(event){
         $('#dias').html(event.strftime('%D'));
         $('#horas').html(event.strftime('%H'));
         $('#minutos').html(event.strftime('%M'));
         $('#segundos').html(event.strftime('%S'));
     });
+
+    //colorbox
+    $('.invitado-info').colorbox({inline:true, width:"50%"});
+
 });

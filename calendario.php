@@ -41,7 +41,10 @@
 				<h3>
 					<i class="fa fa-calendar"></i>
 					<?PHP
-					setlocale(LC_TIME,"spanish");
+					//unix
+					setlocale(LC_TIME,"es_ES.UTF-8");
+					//windows
+					//setlocale(LC_TIME,"spanish");
 
 					echo strftime("%A, %d de %B del %Y", strtotime($dia));?>
 				</h3>

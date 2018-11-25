@@ -798,7 +798,7 @@ p.copyright {
 }
 /***INTERNAS***/
 /**Galeria**/
-body.conferencia .navegacion-principal .activo {
+.navegacion-principal .activo {
     border-bottom: 2px solid #fe4918;
 }
 .galeria a {
@@ -960,6 +960,13 @@ div.dia:hover {
 .dia i {
     color: #fe4918;
     font-size: 1.6em;
+}
+
+/*Colorbox*/
+
+div.cboxElement {
+    padding: 30px !important;
+    text-align: center;
 }
 
 /* ==========================================================================
