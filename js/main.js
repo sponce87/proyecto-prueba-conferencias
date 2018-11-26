@@ -15,13 +15,15 @@
         //botones y divs
         var calcular=document.getElementById('calcular');
         var errorDiv=document.getElementById('error');
-        var botonRegistro=document.getElementById('btnRegistro');
+        var botonRegistro=document.getElementById('BtnRegistro');
         var lista_productos=document.getElementById('lista-productos');
         var suma=document.getElementById('suma-total');
 
         //Extras
         var camisas=document.getElementById('camisa_evento');
         var etiquetas=document.getElementById('etiquetas');
+
+        botonRegistro.disabled=true;
 
 /*       var map = L.map('mapa').setView([-12.068542, -77.085636], 20);
 
@@ -106,6 +108,9 @@
                     lista_productos.innerHTML+=listaProductos[i] + '<br>';
                 }
                 suma.innerHTML='$'+totalPagar.toFixed(2);
+
+                botonRegistro.disabled=false;
+                document.getElementById('total_pedido').value=totalPagar;
 
             }
         }
